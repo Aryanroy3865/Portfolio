@@ -31,7 +31,6 @@ function closeMenu() {
 // when you use arrow function you must write the return value
 // the above things can be written as following
 
-
 let id = (id_call) => document.getElementById(id_call);
 let classes = (classes_call) => document.getElementsByClassName(classes_call);
 
@@ -84,6 +83,8 @@ select_form.addEventListener("submit", (x) => {
   if (a == 1 && b == 1 && c == 1 && d == 1) {
     id("opacity_of_contact_page").style.opacity = "0";
     id("opacity_of_contact_page").style.height = "0";
+    id("opacity_of_contact_page").style.position = "absolute";
+    id("opacity_of_contact_page").style.left = "-1000000px";
     document.body.classList.add("a");
     document.querySelector(".footer-bottom").style.height = "0";
     document.querySelector(".navbar").style.height = "0";
@@ -101,6 +102,8 @@ select_form.addEventListener("submit", (x) => {
     ).innerHTML = `${username.value}, if your inquiry is urgent, please use the phone number listed in the
     footer of my website.`;
     id("excuse3").innerHTML = "Aryan...";
+    id("ok_button").innerHTML = "OK";
+
     formValues.push({
       name: username.value.trim(),
       Email: Email_adress.value.trim(),
@@ -328,4 +331,8 @@ It will be available very soon.
 Inconvenience regretted!`
   );
   alert(`This Website is my First Project.`);
+});
+id("ok_button").addEventListener("click", (e) => {
+  e.preventDefault();
+  location.href = "contact.html";
 });
