@@ -31,6 +31,7 @@ function closeMenu() {
 // when you use arrow function you must write the return value
 // the above things can be written as following
 
+
 let id = (id_call) => document.getElementById(id_call);
 let classes = (classes_call) => document.getElementsByClassName(classes_call);
 
@@ -47,16 +48,39 @@ if (!localStorage.formValues) {
   localStorage.formValues = "[]";
 }
 var formValues = JSON.parse(localStorage.formValues);
+let a, b, c, d;
+let textarea = document.querySelectorAll("input");
+textarea[0].addEventListener("blur", (e) => {
+  if (a != 1) {
+    check_letters_in_username(username.value.trim());
+  }
+});
+textarea[1].addEventListener("blur", (e) => {
+  if (b != 1) {
+    check_char_of_email(Email_adress.value.trim());
+  }
+});
+textarea[2].addEventListener("blur", (e) => {
+  if (c != 1) {
+    check_blank_msg(Comments.value.trim());
+  }
+});
+textarea[3].addEventListener("blur", (e) => {
+  if (d != 1) {
+    check_answer(check_human.value.trim());
+  }
+});
 select_form.addEventListener("submit", (x) => {
   x.preventDefault();
-  let a = check_letters_in_username(username.value.trim());
+  a = check_letters_in_username(username.value.trim());
   fun1(0);
-  let b = check_char_of_email(Email_adress.value.trim());
+  b = check_char_of_email(Email_adress.value.trim());
   fun1(1);
-  let c = check_blank_msg(Comments.value.trim());
+  c = check_blank_msg(Comments.value.trim());
   fun1(2);
-  let d = check_answer(check_human.value.trim());
+  d = check_answer(check_human.value.trim());
   fun1(3);
+
   if (a == 1 && b == 1 && c == 1 && d == 1) {
     id("opacity_of_contact_page").style.opacity = "0";
     id("opacity_of_contact_page").style.height = "0";
