@@ -90,6 +90,7 @@ select_form.addEventListener("submit", (x) => {
     document.querySelector(".navbar").style.height = "0";
     id("body").style.opacity = "0.89";
     id("body").style.backgroundColor = "black";
+    id("body").style.left = "0px";
     id("thanks_name").innerHTML = `Hello! ${username.value}`;
     id("explanation").innerHTML = "Thanks for being awesome!";
     id(
