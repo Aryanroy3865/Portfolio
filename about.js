@@ -28,7 +28,20 @@ Inconvenience regretted!`
   );
   alert(`This Website is my First Project.`);
 });
+document.querySelector(".click_fb").addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open("https://www.facebook.com/profile.php?id=100057814296670");
+});
+document.querySelector(".click_twit").addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open("https://twitter.com/aryan3865?s=08");
+});
 document.querySelector(".click_insta").addEventListener("click", (e) => {
   e.preventDefault();
   window.open("https://www.instagram.com/aryanroy.tony?r=nametag");
 });
+document.querySelector(".click_insta").addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open("https://www.instagram.com/aryanroy.tony?r=nametag");
+});
+
