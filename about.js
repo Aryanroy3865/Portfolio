@@ -29,5 +29,6 @@ Inconvenience regretted!`
   alert(`This Website is my First Project.`);
 });
 document.querySelector(".click_insta").addEventListener("click", (e) => {
+  e.preventDefault();
   window.open("https://www.instagram.com/aryanroy.tony?r=nametag");
 });
