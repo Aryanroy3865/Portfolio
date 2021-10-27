@@ -45,35 +45,7 @@ resume.addEventListener("click", (e) => {
 Inconvenience regretted!"`
   );
 });
-let p_alert = document.querySelector(".project_alert");
-p_alert.addEventListener("click", (e) => {
-  e.preventDefault();
 
-  alert(
-    `Currently, this page is not available.
-[Work is under Process]
-
-It will be available very soon.
-Inconvenience regretted!`
-  );
-  alert(`This Website is my First Project.`);
-});
-
-let project_footer = document.querySelector(
-  "#project_footer_mid-section-part2"
-);
-project_footer.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  alert(
-    `Currently, this page is not available.
-[Work is under Process]
-
-It will be available very soon.
-Inconvenience regretted!`
-  );
-  alert(`This Website is my First Project.`);
-});
 document.querySelector(".click_fb").addEventListener("click", (e) => {
   e.preventDefault();
   window.open("https://www.facebook.com/profile.php?id=100057814296670");
