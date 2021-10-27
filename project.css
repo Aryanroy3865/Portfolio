@@ -150,6 +150,7 @@
   height: 27.6px;
   border: 1px dashed #0e0b0b;
   background-color: rgb(147 149 129);
+  cursor: pointer;
 }
 .know_more_project:hover {
   background-color: #424984;
