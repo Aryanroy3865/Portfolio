@@ -1,5 +1,5 @@
    
-if (localStorage.getItem("year") != 2) {
+if (localStorage.getItem("year") != "2") {
            alert(`Website is not updated since 19 jan 2021.`);
     localStorage.setItem("year", "2");
           }
