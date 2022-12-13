@@ -1,5 +1,9 @@
+   
+if (localStorage.getItem("year") == null) {
+           alert(`Website is not updated since 19 jan 2021`);
+    localStorage.setItem("year", "2");
+          }
 
-alert(`Website is not updated since 19 jan 2021`);
 const nav_phone = document.querySelector(".nav_phone");
 const navmenu = document.querySelector(".navmenu");
 const nav_list = document.querySelectorAll(".nav_list");
