@@ -897,7 +897,7 @@
     height: 125px;
     width: 125px;
     object-fit: cover;
-    object-position: -3px -34px;
+    /* object-position: -3px -34px; */
   }
   .myname_mid-section-part {
     font-size: 23px;
